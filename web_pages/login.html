@@ -7,8 +7,17 @@
 </head>
 <body>
 
+    <!--Navbar-->
+    <div>
+        <a class="active" href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="ticket.html">Ticket</a>
+        <a href="dashboard.html">Dashboard </a>
+    </div>
+
+    <!--Login Form-->
     <h4>Login</h4>
-    <form id="loginForm">
+    <form id="login">
         <div class="mb-3">
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter your username" required>
@@ -26,6 +35,23 @@
         </div>
         <button type="submit">Login</button>
     </form>
+
+    <!--Link to index.html-->
+    <script>
+        document.getElementById("login").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "admin") {
+                window.location.href = "admin.html";
+            } else {
+                const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+                errorModal.show();
+            }
+        });
+    </script>
 
 </body>
 </html>
