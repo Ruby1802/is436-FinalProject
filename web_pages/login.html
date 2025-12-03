@@ -6,6 +6,35 @@
     <title>UMBC Lost & Found Login Page</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <div>
+        <a class="active" href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="ticket.html">Ticket</a>
+        <a href="dashboard.html">Dashboard </a>
+    </div>
+
+    <h4>Login</h4>
+        <form id="loginForm">
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+          </div>
+
+          <div>
+            <div>
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe">Remember me</label>
+            </div>
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+
   </body>
 </html>
