@@ -44,11 +44,10 @@
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
 
-            if (username === "admin" && password === "admin") {
-                window.location.href = "admin.html";
+            if (username === "lost" && password === "lost") {
+                window.location.href = "index.html";
             } else {
-                const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
-                errorModal.show();
+                alert("Invalid Username or Password");
             }
         });
     </script>
