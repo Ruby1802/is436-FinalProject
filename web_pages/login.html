@@ -1,11 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lost & Found Login Page</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+</head>
+<body>
+
+    <h4>Login</h4>
+    <form id="loginForm">
+        <div class="mb-3">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+        </div>
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <div>
+            <div>
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember me</label>
+            </div>
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+</body>
 </html>
