@@ -23,3 +23,5 @@ jobs:
           push: true
           # Replace jacobs12 by using your own username. Make sure the files are stored in the right order.
           tags: jacobs12/foosball:${{github.run_number}}
+
+  # Current error: Needs Username and Password (Basically the secret tokens!)
