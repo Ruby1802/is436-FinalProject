@@ -1,11 +1,11 @@
 <?php
 // STILL A WIP!!!
 // session_start();
-// require ' (sql file database name goes here) '; 
+// require 'db.php'; 
 // if (!isset($SESSION['user_id']))  header('Location: login.php'); exit(); }
 
-// $stmt = $pdo->query('SELECT * FROM users');
-// $users = $stmt->fetchAll();
+// $sql = "SELECT id, name FROM my_table";
+// $users = $sql->fetchAll();
 ?>
 
 <html>
@@ -14,7 +14,7 @@
         <script>
             // Validating form data
             function validate() {
-                let valid1 = confirm("Are you sure you want to delete this user?");
+                let valid1 = confirm("Are you sure you want to delete this user's ticket?");
                 return valid1;
             }
         </script>
