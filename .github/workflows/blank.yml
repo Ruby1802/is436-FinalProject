@@ -20,4 +20,4 @@ jobs:
         with:
           context: php_files/
           push: true
-          tags: orangejuicee/php_files:${{github.run_number}}
+          tags: orangejuicee/is436_group_a_project:${{github.run_number}}
