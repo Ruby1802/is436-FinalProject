@@ -18,6 +18,6 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v4
         with:
-          context: php_files/
+          context: is436_group_a_project/
           push: true
           tags: orangejuicee/is436_group_a_project:${{github.run_number}}
