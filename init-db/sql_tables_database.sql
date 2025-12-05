@@ -7,7 +7,7 @@ Tables are created in the order shown below along with the inserted values.
 
 /* Submit & Log Items */
 CREATE TABLE submitlog (
-sl_id int,
+sl_id int NOT NULL AUTO_INCREMENT,
 item_name varchar(100),
 location varchar(100),
 item_type varchar(100),
@@ -26,7 +26,7 @@ INSERT INTO submitlog (sl_id, item_name, location, item_type, item_desc) VALUES
 
 /* Subscription Table */
 CREATE TABLE subscription (
-sub_id int, 
+sub_id int NOT NULL AUTO_INCREMENT, 
 service varchar(300),
 cost int,
 payment_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -43,7 +43,7 @@ INSERT INTO subscription (sub_id, service, cost) VALUES
 
 /* Ticket Table */
 CREATE TABLE ticket (
-t_id int, 
+t_id int NOT NULL AUTO_INCREMENT, 
 confirmation varchar(50),
 type varchar(50),
 submitted timestamp,
@@ -60,7 +60,7 @@ INSERT INTO ticket (t_id, confirmation, type, submitted) VALUES
 
 /* Login & Signup Table */
 CREATE TABLE loginsign (
-ls_id int,
+ls_id int NOT NULL AUTO_INCREMENT,
 ls_t_id int,
 ls_sub_id int,
 user_name varchar(50),
@@ -83,7 +83,7 @@ INSERT INTO loginsign (ls_id, ls_t_id, ls_sub_id, user_name, username, password,
 
 /* Search Function/Display General Item(s) */
 CREATE TABLE searchdisplay (
-sd_id int,
+sd_id int NOT NULL AUTO_INCREMENT,
 sl_id_FK int,
 ls_id_FK int,
 keyword varchar(100),
