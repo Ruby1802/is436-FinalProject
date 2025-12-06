@@ -18,3 +18,4 @@ RUN apt-get install -y dos2unix && \
     find /var/www/html -type f -print0 | xargs -0 dos2unix || true
 
 WORKDIR /var/www/html
+COPY . /usr/share/nginx/html
