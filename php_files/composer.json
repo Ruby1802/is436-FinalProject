@@ -1,1 +1,14 @@
+{
+    "name": "is436/final-project",
+    "description": "IS436 Final Project for PHP-based web application",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "php_files/"
+        }
+    }
+}
 
