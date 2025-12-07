@@ -29,37 +29,42 @@
   </div>
 </nav>
 
-
-   <h2>Submit Lost Item Ticket</h2>
-
+  <div class="row" style="margin-top: 10px; text-align: center;">
+   <h2>Submit Lost Item Ticket Below!</h2>
+    </div>
 
    <div class="container py-4">
     <form id="contactForm" action="ticket_submitted.html" method="get">
   
         <div class="mb-3">
-           <label for="iname">Item Name</label>
-           <input type="text" id="iname" name="iname">
+        <label class="form-label" for="iname">Item Name:</label>
+        <input class="form-control" id="iname" type="text" placeholder="Example: Airpods Case" required/>
        </div>
 
        <div class="mb-3">
-           <label for="description">Description</label>
+        <label class="form-label" for="description">Description:</label>
+        <textarea class="form-control" id="description" type="text" placeholder="Example: Star pattern on the case, some stars worn out and not visible. The case includes both airpods." style="height: 10rem;" required></textarea>
        </div>
 
        <div class="mb-3">
-           <textarea id="description" name="description" rows="5" cols="50"></textarea>
+           <label class="form-label" for="iname">Date Lost:</label>
+            <input class="form-control" id="date" type="text" placeholder="Example: 01-01-2025" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" title="Date format: MM-DD-YYYY (Example: 01-01-2025)" required>
        </div>
 
        <div class="mb-3">
-           <label for="date">Date Lost</label>
-           <input type="text" id="date" name="date">
+           <label class="form-label" for="location">Location Lost (Optional): </label>
+           <input class="form-control" id="location" type="text" placeholder="Example: Retriever Learning Center in the Library">
        </div>
 
        <div class="mb-3">
-           <label for="location">Location Lost</label>
-           <input type="text" id="location" name="location">
-       </div>
+        <label for="formFileMultiple" class="form-label">Add a picture below of the lost item if you have one (Optional): </label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
 
-       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit Ticket!</button>
+       
+       <div class="d-grid">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit Ticket!</button>
+      </div>
   
     </form>
   
