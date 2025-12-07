@@ -21,9 +21,9 @@
       <div class="navbar-nav">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="login.html">Login/Sign Up</a>
-        <a class= "nav-link active" aria-current="page" href = "ticket.html">Create Ticket</a>
+        <a class= "nav-link active" aria-current="page" href = "ticket.html">Submit Ticket</a>
         <a class="nav-link" href= "dashboard.html">Dashboard </a>
-        <a class="nav-link" href= "search_bar.html">Search </a>
+        <a class="nav-link" href= "search_bar.html">Search Item</a>
       </div>
     </div>
   </div>
@@ -32,8 +32,11 @@
 
    <h2>Submit Lost Item Ticket</h2>
 
-   <form id="ticket">
-       <div>
+
+   <div class="container py-4">
+    <form id="contactForm" action="ticket_submitted.html" method="get">
+  
+             <div>
            <label for="iname">Item Name</label>
            <input type="text" id="iname" name="iname">
        </div>
@@ -51,8 +54,10 @@
            <label for="location">Location Lost</label>
            <input type="text" id="location" name="location">
        </div>
-       <button type="submit">Submit</button>
-   </form>
+  
+    </form>
+  
+  </div>
 
 
 </body>
